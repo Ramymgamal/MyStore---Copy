@@ -1,0 +1,45 @@
+<div class="container ">
+  <br>
+    <br>
+  <div class="row">
+
+    <div  class="col-6 offset-md-2"><img   src={{p.url}} alt="Card image cap" width="50%" ></div>
+    <div  class="col-3  "style="margin-left:-120px">
+      <br>
+      <br>
+      <h3 class="mb-5 ">{{p.name}}</h3>
+      <diV class="row text-center mt-6 " >
+        {{p.description}}
+      </diV>
+      <br>
+
+      <div clas="row  ">
+        {{p.price}}
+      </div>
+      <br>
+
+      <input type="number" class ="select-input" [min]="0"  [(ngModel)]="amount" >
+      <div class="row">
+        <a  class="btn btn-primary" (click)="AddToCart(p)" >Add to cart</a>
+      </div>
+      <div class="row">
+        <a routerLink="/" class="back-link" >back to List</a>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

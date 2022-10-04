@@ -1,6 +1,8 @@
 # MyStore
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+# description
+This program is an online store where you can buy different items and choose what you want from the store, then pay by electronic payment methods and receive the product with ease
+
 
 ## Development server
 

@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div>Total price : {{totalPrice}}</div>
+      <div class="col-6" *ngFor="let item of items">
+        <br><br>
+        <div class="row">
+          <div  class="col-6 "  >
+            <img class="product-image"  width="100%" src={{item.product.url}}  >
+          </div>
+          <div class="col-6 ">
+            <h5 class="card-title  ">{{item.product.name}}</h5>
+            <p class="card-text ">{{item.product.price}}</p>
+            <input type="number" class ="col-6 mb-2" [min]="0" [(ngModel)]="item.amount"  (ngModelChange)="reCalculate(item)"  >
+
+
+            <button class="btn btn-danger  btn-sm"  (click)="remove(item)">Remove </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+<br>
+<br>
+<br>
+      <form [formGroup]="form"  (ngSubmit)="onSubmit()" class="text-cnter">
+        <div class="form-row">
+          <label>Full Name</label>
+          <input type="text" class="form-control" formControlName="fullname" name="fullname"  required="true" minlength="3" placeholder="enter full name"    >
+        </div>
+        <div *ngIf="form.get('fullname').touched && form.get('fullname').invalid" class="alert alert-warning">
+          please enter name
+        </div>
+
+        <div class="form-row">
+          <label>adress</label>
+          <input type="text" class="form-control" formControlName="address" name="address"  required="true" minlength="3" placeholder="enter adress"   >
+        </div>
+        <div *ngIf="form.get('address').touched && form.get('address').invalid" class="alert alert-warning">
+          please enter adress
+        </div>
+        <div class="form-row">
+          <label>Credit Card</label>
+          <input type="number"   name="credit" formControlName="credit"class="form-control notSpin"required  placeholder="credit card" >
+          <br>
+        <button type="submit" [disabled]="!form.valid" class="btn btn-primary" >Check Out</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- create-blog.component.html -->
+
+
+
+
