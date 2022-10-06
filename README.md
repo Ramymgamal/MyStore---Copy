@@ -6,7 +6,7 @@ This program is an online store where you can buy different items and choose wha
 This application does not depend on real data taken from (api), but it depends on a file of type (Json) that holds all the data as a copy for training only
 
 # screen shots 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Ramymgamal/MyStore---Copy/blob/cbada03649eb150f6746867e9048c0a61706a964/src/assets/img/shoppingflow.gif)
 
 
 
