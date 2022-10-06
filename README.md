@@ -5,15 +5,26 @@ This program is an online store where you can buy different items and choose wha
 # Build Status
 This application does not depend on real data taken from (api), but it depends on a file of type (Json) that holds all the data as a copy for training only
 
-# screen shots 
+# screen shots  and how to use
+This small video shows how to deal within the application to purchase any product until the completion of the purchase process
+
 ![alt text](https://github.com/Ramymgamal/MyStore---Copy/blob/cbada03649eb150f6746867e9048c0a61706a964/src/assets/img/shoppingflow.gif)
 
+# Tech/Framework used
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+# Features  
+  * Show products after fetching from json file
+  * View any product details
+  * Add any product to the basket and determine its quantity
+  * Open the basket to see the types and the ability to change the quantity or remove any item
+  * Purchasing and approval process
 
-
-
+# Installation and run 
+The project requires only (npm) install and (ng serve) to install and launch the application
+* Running npm install and ng serve help run the application. 
+* The default port 4200 is available to run the application.
 
 ## Development server
 
