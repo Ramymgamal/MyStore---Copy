@@ -4,7 +4,7 @@
   <div class="card-body  text-center">
     <h5 class="card-title  ">{{product.name}}</h5>
     <p class="card-text ">{{product.price}}</p>
-    <input type="number" class ="col-3" [min]="0" value="0"  >
+    <input type="number" class ="col-3" [min]="1" value="1"  >
     <br>
     <br>
     <a  class="btn btn-primary" (click)="item.emit(product)">Add to cart</a>
